@@ -30,63 +30,68 @@
   margin-bottom: 20px;
 }
 
-.card {
-  width: 400px;
-  border-radius: 10px;
+.models {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.yeyouno, .yeyodos, .yeyotres {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: calc(33.33% - 20px);
   margin-bottom: 20px;
+  text-align: center;
+  font-family: "Racing Sans One", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 600px;
+  overflow: hidden;
 }
 
-.card-img-top {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+.yeyouno img, .yeyodos img, .yeyotres img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-span.text-muted {
-  font-size: 20px;
+.price {
+  color: grey;
+  font-size: 22px;
 }
 
-small.text-muted {
-  font-size: 8px;
-}
-
-h5.mb-0 {
-  font-size: 1rem;
-}
-
-small.ghj {
-  font-size: 9px;
-}
-
-.mid {
-  background: #ffffff;
-}
-
-h6.ml-1 {
-  font-size: 13px;
-}
-
-small.key {
-  text-decoration: underline;
-  font-size: 9px;
+.yeyouno button, .yeyodos button, .yeyotres button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  color: #ffffff;
+  background-color: red;
+  text-align: center;
   cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
-.btn-danger {
-  color: #FFCBD2;
+.yeyouno button:hover, .yeyodos button:hover, .yeyotres button:hover {
+  opacity: 0.7;
 }
 
-.btn-danger:focus {
-  box-shadow: none;
-}
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .yeyouno, .yeyodos, .yeyotres {
+    width: calc(100% - 20px);
+    height: auto;
+  }
 
-small.justify-content-center {
-  font-size: 9px;
-  cursor: pointer;
-  text-decoration: underline;
-}
+  .models {
+    flex-direction: column;
+    align-items: center;
+  }
 
-@media screen and (max-width: 600px) {
-  .col-sm-4 {
-    margin-bottom: 50px;
+  .yeyouno img, .yeyodos img, .yeyotres img {
+    height: 100%;
   }
 }

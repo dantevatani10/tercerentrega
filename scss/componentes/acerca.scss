@@ -1,0 +1,9 @@
+@import "../base/_variables";
+.py-3 {  // o cualquier clase py-* que estés utilizando
+    margin-top: 150px; // Agrega el valor que necesites
+  }
+.card{
+  .card-body{
+    h3{color: $red-color;}
+}
+}

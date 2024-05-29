@@ -1,0 +1,75 @@
+.introcontacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../img/Gemini_Generated_Image_q7tnf4q7tnf4q7tn.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.introcontacto h1 {
+    margin-bottom: 20px;
+    /* Ajusta el espacio inferior según sea necesario */
+}
+.formulario {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    margin: 0 20px; 
+  
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  
+      .input-group {
+        margin-bottom: 20px;
+  
+        label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+  
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+  
+        textarea {
+          resize: vertical;
+        }
+      }
+  
+      button[type="submit"] {
+        background-color: #ca0000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+  
+        &:hover {
+          background-color: #960000;
+        }
+      }
+    }
+  }
+  

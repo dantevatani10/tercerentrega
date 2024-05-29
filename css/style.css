@@ -82,11 +82,13 @@ nav {
 }
 
 .intromodelos h1 {
-  margin-bottom: 20px; /* Ajusta el espacio inferior según sea necesario */
+  margin-bottom: 20px;
+  /* Ajusta el espacio inferior según sea necesario */
 }
 
 .intromodelos h2 {
-  color: #ffcc00; /* Cambia esto al color que prefieras */
+  color: #ffcc00;
+  /* Cambia esto al color que prefieras */
 }
 
 .banner {
@@ -97,66 +99,234 @@ nav {
   margin-bottom: 20px;
 }
 
-.card {
-  width: 400px;
-  border-radius: 10px;
+.models {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.yeyouno, .yeyodos, .yeyotres {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: calc(33.33% - 20px);
   margin-bottom: 20px;
+  text-align: center;
+  font-family: "Racing Sans One", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 600px;
+  overflow: hidden;
 }
 
-.card-img-top {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+.yeyouno img, .yeyodos img, .yeyotres img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-span.text-muted {
-  font-size: 20px;
+.price {
+  color: grey;
+  font-size: 22px;
 }
 
-small.text-muted {
-  font-size: 8px;
-}
-
-h5.mb-0 {
-  font-size: 1rem;
-}
-
-small.ghj {
-  font-size: 9px;
-}
-
-.mid {
-  background: #ffffff;
-}
-
-h6.ml-1 {
-  font-size: 13px;
-}
-
-small.key {
-  text-decoration: underline;
-  font-size: 9px;
+.yeyouno button, .yeyodos button, .yeyotres button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  color: #ffffff;
+  background-color: red;
+  text-align: center;
   cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
-.btn-danger {
-  color: #FFCBD2;
+.yeyouno button:hover, .yeyodos button:hover, .yeyotres button:hover {
+  opacity: 0.7;
 }
 
-.btn-danger:focus {
-  box-shadow: none;
-}
-
-small.justify-content-center {
-  font-size: 9px;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-@media screen and (max-width: 600px) {
-  .col-sm-4 {
-    margin-bottom: 50px;
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .yeyouno, .yeyodos, .yeyotres {
+    width: calc(100% - 20px);
+    height: auto;
+  }
+  .models {
+    flex-direction: column;
+    align-items: center;
+  }
+  .yeyouno img, .yeyodos img, .yeyotres img {
+    height: 100%;
   }
 }
+.intronoticias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/Gemini_Generated_Image_ffdtm0ffdtm0ffdt.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.intronoticias h1 {
+  margin-bottom: 20px;
+  /* Ajusta el espacio inferior según sea necesario */
+}
+
+.intronoticias h2 {
+  color: #ffcc00;
+  /* Cambia esto al color que prefieras */
+}
+
+.noticias .container {
+  width: 80%;
+  margin: 0 auto;
+}
+.noticias h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.noticias .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.noticias .noticia {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+.noticias .noticia:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.noticias .noticia img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.noticias .noticia .texto {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.noticias .noticia h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.noticias .noticia p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.noticias .noticia .button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  color: #ffffff;
+  background-color: red;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.noticias .noticia .button:hover {
+  opacity: 0.7;
+}
+.noticias .noticia a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+.noticias .noticia a:hover {
+  color: #ffffff;
+}
+
+.introcontacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/Gemini_Generated_Image_q7tnf4q7tnf4q7tn.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.introcontacto h1 {
+  margin-bottom: 20px;
+  /* Ajusta el espacio inferior según sea necesario */
+}
+
+.formulario {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  margin: 0 20px;
+}
+.formulario .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.formulario form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.formulario form .input-group {
+  margin-bottom: 20px;
+}
+.formulario form .input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.formulario form .input-group input[type=text],
+.formulario form .input-group input[type=email],
+.formulario form .input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.formulario form .input-group textarea {
+  resize: vertical;
+}
+.formulario form button[type=submit] {
+  background-color: #ca0000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.formulario form button[type=submit]:hover {
+  background-color: #960000;
+}
+
+.py-3 {
+  margin-top: 150px;
+}
+
+.card .card-body h3 {
+  color: red;
+}
+
 * {
   box-sizing: border-box;
 }
