@@ -1,0 +1,37 @@
+@import "../scss/base/_extends";
+@import "../scss/base/_mediaquery.scss";
+@import "../scss/base/_variables";
+@import "../scss/componentes/footer.scss";
+@import "../scss/componentes/intro.scss";
+@import "../scss/componentes/navbar.scss";
+@import "../scss/componentes/productos.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Racing Sans One", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: azure;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
